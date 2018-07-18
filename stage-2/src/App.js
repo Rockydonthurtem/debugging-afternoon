@@ -12,7 +12,7 @@ class App extends Component {
     super();
 
     this.state = {
-      shoppingCart: []
+      shoppingCart: [{ item: "shirt", price: 78 }]
     }
 
     this.addToShoppingCart = this.addToShoppingCart.bind(this);
