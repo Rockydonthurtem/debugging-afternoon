@@ -17,6 +17,7 @@ class ShoppingCart extends Component {
     }
 
     render() {
+        console.log(this.state.shoppingCart)
         let shoppingCartDisplay = this.state.shoppingCart.map((element, index) => {
             return (
                 <div className="shopping-cart-product-container" key={index}>
@@ -29,8 +30,8 @@ class ShoppingCart extends Component {
                         </div>
                     </div>
                 </div>
-            )
-        })
+            );
+        });
         return (
             <div className="shopping-cart-container">
                 {shoppingCartDisplay[0] ?
